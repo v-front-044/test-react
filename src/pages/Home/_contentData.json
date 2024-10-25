@@ -1,0 +1,117 @@
+{
+	"main": {
+		"title": "Your free, open‑source <br> game engine.",
+		"text": "Develop your 2D & 3D games, cross-platform projects, or even XR ideas!",
+		"linkText": "Download Latest"
+	},
+
+	"news": {
+		"title": "Latest news",
+		"articles": [
+			{
+				"subTitle": "Dev snapshot: Godot 4.4 dev 1",
+				"description": "The first snapshot after releasing 4.3, already packed with new features!",
+				"date": "26 August 2024"
+			},
+			{
+				"subTitle": "Godot 4.3, a shared effort",
+				"description": "With over 3,500 commits authored by over 500 contributors, the latest Godot Engine release comes pac...",
+				"date": "15 August 2024"
+			},
+			{
+				"subTitle": "Design of the Skeleton Modifier 3D",
+				"description": "We have reworked the skeleton bone update process to add SkeletonModifier3D for modifying the Skeleton.",
+				"date": "12 August 2024"
+			},
+			{
+				"subTitle": "Release candidate: Godot 4.3 RC 3",
+				"description": "With all known major regressions fixed, we are now publishing a third release candidate to confirm t...",
+				"date": "8 August 2024"
+			}
+		],
+		"linkText": "More News"
+	},
+
+	"comments": {
+		"title": "A different way to make games",
+		"articles": [
+			{
+				"subTitle": "Innovative design",
+				"description": "Godot's Node and Scene system gives you both power and flexibility to create anything."
+			},
+			{
+				"subTitle": "Use the right language for the job",
+				"description": "Keep your code modular with an object-oriented API using Godot's own GDScript, C#, C++, or bring your own using GDExtension."
+			},
+			{
+				"subTitle": "Dedicated 2D engine",
+				"description": "Make crisp and performant 2D games with Godot's dedicated 2D rendering engine with real 2D pixel coordinates and 2D nodes."
+			},
+			{
+				"subTitle": "Simple and powerful 3D",
+				"description": "Godot's 3D nodes give you everything you need to build, animate, and render your 3D worlds and characters."
+			},
+			{
+				"subTitle": "Release on all platforms",
+				"description": "Deploy your game on desktop, mobile, and the web in seconds. Godot even supports consoles through third party publishers."
+			},
+			{
+				"subTitle": "Open Source",
+				"description": "Truly open development: anyone who contributes to Godot benefits equally from others’ contributions."
+			}
+		],
+		"linkText": "Learn more about using Godot"
+	},
+
+	"community": {
+		"title": "Get involved",
+		"text": "Join the community and help create a game engine that belongs to everybody.",
+		"blocks": [
+			{
+				"name": "Code",
+				"description": "If you know how to code, you can help by fixing bugs and working with engine contributors towards the implementation of new features.",
+				"linkHref": "./contact",
+				"linkText": "Learn more"
+			},
+			{
+				"name": "Document",
+				"description": "Documentation quality is essential in a game engine; help make it better by updating the API reference, writing new guides or submitting corrections.",
+				"linkHref": "./privacy-policy",
+				"linkText": "Learn more"
+			},
+			{
+				"name": "Report",
+				"description": "Found a problem with the engine? Don't forget to report it so that developers can track it down.",
+				"linkHref": "./terms-conditions",
+				"linkText": "Learn more"
+			}
+		]
+	},
+
+	"banner": {
+		"text": "You don't need to be an engine developer to help Godot. Join the development fund and help us make the Godot Engine even more awesome!",
+		"linkText": "Donate"
+	},
+
+	"partners": [
+		{
+			"position": "Patron"
+		},
+		{
+			"position": "Sponsor Platinum"
+		},
+		{
+			"position": "Sponsor Gold"
+		},
+		{
+			"position": "Sponsor Silver"
+		}
+	],
+	"partnersContent": {
+		"title": "Godot is sponsored by:",
+		"text": "If you want to sponsor the project, please write to",
+		"email": "contact@godot.foundation"
+	},
+
+	"googleMapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10272235.955548747!2d-15.790008250000062!3d51.05548620000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d44b9d36f63%3A0xb075026b6ceaa2b8!2sGodot%20Brasserie!5e0!3m2!1suk!2sua!4v1724842376542!5m2!1suk!2sua"
+}

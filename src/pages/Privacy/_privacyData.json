@@ -1,0 +1,41 @@
+{
+	"pageTitle": "Privacy policy",
+	"sections": [
+		{
+			"subTitle": "Scope of This Notice",
+			"content": [
+				"This Privacy Statement is intended to describe Godot Engine's privacy practices and provide information about the choices you have regarding the ways in which information collected by Godot Engine is used and disclosed. Godot Engine is referred to in this document as 'Godot'.",
+				"It covers both online platforms of the Godot project and the use of the Godot Engine application."
+			]
+		},
+		{
+			"subTitle": "Our Commitment to Privacy",
+			"content": [
+				"Your privacy is important to Godot. To better protect your privacy and to comply with various laws and regulations, we have provided this Statement explaining our information practices and the choices you can make about the way your personal information is collected, used and disclosed. To make this Statement easy to find, we have made it available on our, and at many of the locations where personally-identifiable information may be requested."
+			]
+		},
+		{
+			"subTitle": "The Information We Collect",
+			"content": [
+				"This Privacy Statement applies to all information collected by or submitted to Godot, including personal data. 'Personal data' is data that can be used to identify an individual."
+			],
+			"list": [
+				"You visit the Godot website",
+				"You access the Asset Library in the Godot editor application to browse or download assets",
+				"You sign up as a Godot Patreon or otherwise donate to Godot",
+				"You sign up and log in to an account on the Godot Chat platform...",
+				"You use one of Godot's publicly logged project IRC channels...",
+				"You sign up for one of our public mailing lists hosted by TuxFamily",
+				"You participate in surveys or evaluations",
+				"You submit questions or comments to us"
+			]
+		},
+		{
+			"subTitle": "How to Contact Us",
+			"content": [
+				"If you have any questions about any of these practices or Godot's use of your personal information, please feel free to contact us by email at:",
+				"Godot will work with you to resolve any concerns you may have about this Statement."
+			]
+		}
+	]
+}

@@ -1,0 +1,42 @@
+@import '@variables';
+@import '@common';
+
+
+.community {
+   
+   &__block {
+      @extend %flex-col;
+      padding: 16px;
+      text-align: center;
+   }
+
+   &__image {
+      max-width: 250px;
+      @extend %img-wrap;
+
+      img {
+         @extend %img;
+      }
+   }
+
+   &__name {
+      display: inline-block;
+      font-size: 22px;
+   }
+
+   &__descr {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      opacity: 0.8;
+      margin-block: 30px;
+
+      @media (max-width:$mobile) {
+         margin-block: 15px;
+      }
+   }
+
+   &__link {
+      @extend %button;
+      color: #4d9fdc;
+   }
+}

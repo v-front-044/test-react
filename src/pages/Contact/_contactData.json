@@ -1,0 +1,12 @@
+{
+	"title": "Do you have any questions?",
+	"text": "Let's discuss your tasks. Get in touch today!",
+	"form": {
+		"nameLabel": "Enter Your name",
+		"namePlaceholder": "For example, Michael",
+		"phoneLabel": "Enter Your phone number",
+		"phonePlaceholder": "+99 ХХХ ХХХ ХХ ХХ",
+		"submitButton": "Send"
+	},
+	"popupMessage": "Your data has been sent successfully!"
+}

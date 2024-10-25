@@ -1,0 +1,36 @@
+@import '@variables';
+@import '@common';
+
+
+.comments {
+   @extend %section-padding-block;
+   color: var(--text-white);
+
+   &__container { /* */}
+
+   &__title {
+      @extend %h2-title;
+   }
+
+   &__body {
+      @extend %indentation-to-title;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      @media (max-width:$tablet) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width:$mobile) {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   &__link {
+      margin-top: 32px;
+      margin-inline: auto;
+      @extend %button;
+      white-space: wrap;
+   }
+}

@@ -1,0 +1,27 @@
+@import '@variables';
+@import '@common';
+
+
+.map {
+   @extend %section-padding-block;
+
+   &__container {/* */}
+}
+
+
+.googleMap {
+   margin-bottom: 0;
+   padding-bottom: 0;
+   width: 100%;
+   height: 300px;
+   border-radius: 16px;
+   overflow: hidden;
+
+   & iframe {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      border: 0;
+   }
+}

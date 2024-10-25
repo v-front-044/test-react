@@ -1,0 +1,82 @@
+@import '@variables';
+@import '@common';
+
+
+.partners {
+   @extend %section-padding-block;
+   color: #fff;
+
+   &__container {/* */}
+
+   &__title {
+      @extend %h2-title;
+   }
+
+   &__patron,
+   &__platinum,
+   &__gold,
+   &__silver {
+      display: grid;
+      gap: 20px;
+
+      @media (max-width:$mobile) {
+         grid-template-columns: 1fr !important;
+      }
+
+      @media (max-width:$mobileSmall) {
+         gap: 10px;
+      }
+   }
+
+   &__patron {
+      grid-template-columns: repeat(2, 1fr);
+
+      & img {
+         max-height: 100px;
+      }
+   }
+
+   &__platinum {
+      grid-template-columns: repeat(3, 1fr);
+
+      & img {
+         max-height: 80px;
+      }
+   }
+
+   &__gold {
+      grid-template-columns: repeat(4, 1fr);
+
+      & img {
+         max-height: 60px;
+      }
+   }
+
+   &__silver {
+      grid-template-columns: repeat(5, 1fr);
+
+      & img {
+         max-height: 40px;
+      }
+   }
+
+   &__text {
+      margin-top: 50px;
+      font-size: 18px;
+      font-weight: 400;
+      opacity: 0.8;
+
+      a {
+         color: var(--secondary-color);
+         text-decoration: underline;
+         opacity: 0.8;
+         transition: opacity .3s ease-in-out;
+
+         @media (any-hover: hover) {
+            &:hover {
+               opacity: 1;
+            }
+         }
+      }
+   }
+}

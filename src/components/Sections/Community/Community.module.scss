@@ -1,0 +1,31 @@
+@import '@variables';
+@import '@common';
+
+
+.community {
+   @extend %section-padding-block;
+   color: #fff;
+
+   &__container {/* */}
+
+   &__title {
+      @extend %h2-title;
+   }
+
+   &__text {
+      margin-block: 15px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 150%;
+      font-family: "Roboto", sans-serif;
+   }
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width:$tablet) {
+         flex-direction: column;
+      }
+   }   
+}

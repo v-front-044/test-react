@@ -1,0 +1,78 @@
+@import '@variables';
+@import '@common';
+
+
+.rules {
+   color: var(--text-white);
+
+   &__container {/* */}
+
+   &__container.content {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__body {
+      @extend %section-padding-block;
+      max-width: 800px;
+      width: 100%;
+      font-weight: 400;
+
+      @media (max-width:$mobile) {
+         font-size: 16px;
+      }
+   }
+
+   &__block {
+      &:not(:first-child) {
+         @include adaptiveValue("margin-top", 60, 30);
+      }
+
+      a {
+         color: var(--secondary-color);
+         text-decoration: underline;
+         font-weight: 700;
+         transition: opacity .3s ease-in-out;
+
+         @media (any-hover: hover) {
+            &:hover {
+               text-decoration: none;
+            }
+         }
+      }
+   }
+
+   &__subTitle {
+      @extend %h2-title;
+
+      @media (max-width:$mobile) {
+         font-size: 22px;
+      }
+   }
+
+   &__text {
+      opacity: 0.8;
+
+      &:not(:first-child) {
+         margin-top: 20px;
+      }
+   }
+
+   &__box-list {
+      margin-top: 20px;
+   }
+
+   &__list {
+      margin-top: 10px;
+      opacity: 0.8;
+      padding-left: 20px;
+   }
+
+   &__item {
+      list-style: disc;
+
+      &:not(:first-child) {
+         margin-top: 10px;
+      }
+   }
+}

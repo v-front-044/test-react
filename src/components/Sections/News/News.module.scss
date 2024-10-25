@@ -1,0 +1,48 @@
+@import '@variables';
+@import '@common';
+
+
+.news {
+   @extend %section-padding-block;
+   color: var(--white-color);
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__title {
+      @extend %h2-title;
+   }
+
+   &__body {
+      @extend %indentation-to-title;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+
+      @media (max-width:$tablet) {
+         flex-direction: column;
+      }
+   }
+
+   &__right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @media (max-width:$tablet) {
+         flex-direction: row;
+      }
+
+      @media (max-width:$mobile) {
+         flex-direction: column;
+      }
+   }
+
+   &__link {
+      margin-top: 20px;
+      @extend %button;
+      align-self: flex-end;
+   }
+}
