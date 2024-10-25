@@ -1,81 +1,33 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 
+// Підключаємо глобальні стилі
 import './style.scss';
 
+// Маршрутизація
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Home } from './pages/Home.jsx';
-import { ContactUs } from './pages/ContactUs.jsx';
-import { Calculator } from './pages/Calculator.jsx';
-import { TermsConditions } from './pages/TermsConditions.jsx';
-import { PrivacyPolicy } from './pages/PrivacyPolicy.jsx';
-import { OurBlog } from './pages/OurBlog.jsx';
-import { About } from './pages/About.jsx';
-import { LoanRates } from './pages/LoanRates.jsx';
-import { Catalog } from './pages/Catalog.jsx';
-import { VehicleVideos } from './pages/VehicleVideos.jsx';
-import { Quiz } from './pages/Quiz.jsx';
+import { Home } from './pages/Home/Home.jsx';
+import { Contact } from './pages/Contact/Contact.jsx';
+import { Terms } from './pages/Terms/Terms.jsx';
+import { Privacy } from './pages/Privacy/Privacy.jsx';
 
 
+// Конфігурація маршрутизації
 const router = createBrowserRouter([
   {
-    path: "/CarMasters/",
+    path: "/",
     element: <App />,
     children: [
-      {
-        path: "/CarMasters/",
-        element: <Home />,
-      },
-      {
-        path: "/CarMasters/calculator",
-        element: <Calculator />,
-      },
-      {
-        path: "/CarMasters/videos",
-        element: <VehicleVideos />,
-      },
-      {
-        path: "/CarMasters/about",
-        element: <About />,
-      },
-      {
-        path: "/CarMasters/loan-rates",
-        element: <LoanRates />,
-      },
-      {
-        path: "/CarMasters/contact-us",
-        element: <ContactUs />,
-      },
-      {
-        path: "/CarMasters/terms-conditions",
-        element: <TermsConditions />,
-      },
-      {
-        path: "/CarMasters/privacy-policy",
-        element: <PrivacyPolicy />,
-      },
-      {
-        path: "/CarMasters/blog",
-        element: <OurBlog />
-      },
+      { path: "/", element: <Home /> },
+      { path: "contact/", element: <Contact /> },
+      { path: "terms-conditions", element: <Terms /> },
+      { path: "privacy-policy", element: <Privacy /> },
 
-      
-      {
-        path: "/CarMasters/catalog",
-        element: <Catalog />
-      },
-      {
-        path: "/CarMasters/quiz",
-        element: <Quiz />
-      },
+
     ]
   }
-])
-
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  <RouterProvider router={router} />
+);
