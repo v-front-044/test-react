@@ -10,8 +10,10 @@ import img3 from '@img/community/report.png';
 
 const images = [img1, img2, img3];
 
-const Community = () => {
+// Масив з необхідними внутрішніми посиланнями
+const links = ['/contact', '/privacy-policy', '/terms-conditions'];
 
+const Community = () => {
    return (
       <section className={styles.community}>
          <div className={styles.community__container}>
@@ -24,8 +26,8 @@ const Community = () => {
                      imageSrc={images[index]}
                      name={block.name}
                      description={block.description}
-                     linkHref={block.linkHref}
                      linkText={block.linkText}
+                     linkHref={links[index]}
                   />
                ))}
             </div>

@@ -5,29 +5,34 @@
 	// Site colors (Кольори сайту):
 
 	// =================================================================
-	--header: #fff;
-	--footer: #000;
+	--bg-site: #344b55;
+
+	--header: #000;
+	--footer: #111;
+	--menu: #333639;
 
 	--text-black: #000;
 	--text-white: #fff;
 	--text-purple: #7380FF;
-	--text-content: #41456B;
-	--text-secondary: #606276;
+	--text-content: #c7c7c7;
+	--text-secondary: #898989;
 
 	--white-color: #fff;
 	--main-color: #41456B;
 
 	--border-color: #D7D7D7;
 
-	--accent-color: #7481FF;
+	--accent-color: #263256;
+	--inverse-color: #ff0000;
+	--secondary-color: #4d9fdc;
 
 	--bg-button-white: #fff;
 
-	--button-default: #7481FF;
-	--button-hover: #6270FF;
+	--button-default: #fff;
+	--button-hover: #4d9fdc;
 
 	--icon-default: #fff;
-	--icon-accent: #7481FF;
+	--icon-accent: #263256;
 
 	--menu-background: #fff;
 	--menu-opacity: rgba(0, 0, 0, 0.10);

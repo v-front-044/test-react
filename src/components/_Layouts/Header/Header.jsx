@@ -1,38 +1,35 @@
-// React
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
+import styles from './Header.module.scss';
+import { useState, useEffect } from 'react';
 
-import Logo from '../../Logo/Logo';
-import { InventoryButton, RequestButton } from '../../Buttons/Buttons';
-import { BurgerMenu } from '../../BurgerMenu/BurgerMenu';
+import Logo from '../Logo/Logo';
+import Menu from '../Menu/Menu';
 
 
-// Import
-import "./Header.scss";
+const Header = () => {
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+   const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+   };
 
-function Header() {
-
-   const color = "white";
+   useEffect(() => {
+      if (isMenuOpen) {
+         document.documentElement.classList.add('menu-open');
+      } else {
+         document.documentElement.classList.remove('menu-open');
+      }
+   }, [isMenuOpen]);
 
    return (
-      <header className="header">
-         <div className="header__container">
-            <div className="header__body">
+      <header className={styles.header}>
+         <div className={styles.header__container}>
+            <div className={styles.header__body}>
                <Logo />
-
-               <div className="header__block">
-                  <div className="header__button-box">
-                     <InventoryButton color={color} />
-                     <RequestButton />
-                  </div>
-                  
-                  <BurgerMenu />
-               </div>
+               <Menu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
             </div>
          </div>
       </header>
-   )
-}
+   );
+};
 
 export default Header;

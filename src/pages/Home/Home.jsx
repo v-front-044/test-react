@@ -11,7 +11,7 @@ export function Home() {
    return (
       <>
          <Main href="" />
-         <News href="./contact" />
+         <News href="" />
          <Comments href="" />
          <Community />
          <Banner href="" />

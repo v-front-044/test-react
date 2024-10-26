@@ -70,19 +70,16 @@
 			{
 				"name": "Code",
 				"description": "If you know how to code, you can help by fixing bugs and working with engine contributors towards the implementation of new features.",
-				"linkHref": "./contact",
 				"linkText": "Learn more"
 			},
 			{
 				"name": "Document",
 				"description": "Documentation quality is essential in a game engine; help make it better by updating the API reference, writing new guides or submitting corrections.",
-				"linkHref": "./privacy-policy",
 				"linkText": "Learn more"
 			},
 			{
 				"name": "Report",
 				"description": "Found a problem with the engine? Don't forget to report it so that developers can track it down.",
-				"linkHref": "./terms-conditions",
 				"linkText": "Learn more"
 			}
 		]

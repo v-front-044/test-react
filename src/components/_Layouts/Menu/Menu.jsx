@@ -1,7 +1,15 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Menu.module.scss';
+
+
+// Масив об'єктів для навігаційних посилань
+const menuLinks = [
+   { path: '/privacy-policy', label: 'Privacy Policy' },
+   { path: '/terms-conditions', label: 'Terms Condition' },
+   { path: '/contact', label: 'Contact' }
+];
 
 const Menu_1 = ({ isOpen, toggleMenu }) => (
    <div className={styles.menu}>
@@ -10,13 +18,15 @@ const Menu_1 = ({ isOpen, toggleMenu }) => (
       </button>
       <nav className={`${styles.menu__body} ${isOpen ? styles.open : ''}`}>
          <ul className={styles.menu__list}>
-            <li className={styles.menu__item}><a href="features.html" className={styles.menu__link}>Features</a></li>
-            <li className={styles.menu__item}><a href="blog.html" className={styles.menu__link}>Blog</a></li>
-            <li className={styles.menu__item}><a href="community.html" className={styles.menu__link}>Community</a></li>
-            <li className={styles.menu__item}><a href="about.html" className={styles.menu__link}>About</a></li>
-            <li className={styles.menu__item}><a href="assets.html" className={styles.menu__link}>Assets</a></li>
+            {menuLinks.map((link, index) => (
+               <li key={index} className={styles.menu__item}>
+                  <Link to={link.path} className={styles.menu__link}>
+                     {link.label}
+                  </Link>
+               </li>
+            ))}
          </ul>
-         <a className={styles.menu__button} href="#">❤︎ Donate</a>
+         <a className={styles.menu__button} href="#">❤︎ Download</a>
       </nav>
    </div>
 );

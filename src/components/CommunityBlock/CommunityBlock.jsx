@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { Link } from 'react-router-dom';
 import styles from './CommunityBlock.module.scss';
 
 
@@ -10,9 +11,9 @@ const CommunityBlock = ({ imageSrc, name, description, linkHref, linkText }) => 
          </div>
          <span className={styles.community__name}>{name}</span>
          <p className={styles.community__descr}>{description}</p>
-         <a className={styles.community__link} href={linkHref}>
+         <Link className={styles.community__link} to={linkHref}>
             {linkText}
-         </a>
+         </Link>
       </div>
    );
 };
